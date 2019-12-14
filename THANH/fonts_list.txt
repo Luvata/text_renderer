@@ -1,0 +1,4 @@
+./THANH/fonts/times.ttf
+./THANH/fonts/timesbd.ttf
+./THANH/fonts/timesbi.ttf
+./THANH/fonts/timesi.ttf

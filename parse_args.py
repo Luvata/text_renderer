@@ -16,23 +16,23 @@ def parse_args():
                              'should less then the width of last CNN layer.')
 
     parser.add_argument('--img_height', type=int, default=32)
-    parser.add_argument('--img_width', type=int, default=256,
+    parser.add_argument('--img_width', type=int, default=0,
                         help="If 0, output images will have different width")
 
-    parser.add_argument('--chars_file', type=str, default='./data/chars/chn.txt',
+    parser.add_argument('--chars_file', type=str, default='./THANH/char',
                         help='Chars allowed to be appear in generated images.')
 
-    parser.add_argument('--config_file', type=str, default='./configs/default.yaml',
+    parser.add_argument('--config_file', type=str, default='./THANH/default.yaml',
                         help='Set the parameters when rendering images')
 
-    parser.add_argument('--fonts_list', type=str, default='./data/fonts_list/chn.txt',
+    parser.add_argument('--fonts_list', type=str, default='./THANH/fonts_list.txt',
                         help='Fonts file path to use')
 
     parser.add_argument('--bg_dir', type=str, default='./data/bg',
                         help="Some text images(according to your config in yaml file) will"
                              "use pictures in this folder as background")
 
-    parser.add_argument('--corpus_dir', type=str, default="./data/corpus",
+    parser.add_argument('--corpus_dir', type=str, default="./THANH/corpus",
                         help='When corpus_mode is chn or eng, text on image will randomly selected from corpus.'
                              'Recursively find all txt file in corpus_dir')
 
